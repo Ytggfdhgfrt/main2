@@ -114,6 +114,9 @@ tools/*/*.i.tmp
 /tools/clang-format/node_modules
 /tools/eslint/node_modules
 /tools/lint-md/node_modules
+# Ignore node_modules and build output for the web app
+/Crypto-Wallet-Manager/node_modules/
+/Crypto-Wallet-Manager/dist/
 
 # === Rules for test artifacts ===
 /*.tap
