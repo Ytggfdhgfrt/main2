@@ -66,6 +66,12 @@ export function NavHeader() {
                 </div>
               </DropdownMenuLabel>
               <DropdownMenuSeparator className="bg-white/10" />
+              <DropdownMenuItem asChild className="text-muted-foreground focus:text-white">
+                <Link href="/profile">
+                  <User className="mr-2 h-4 w-4" />
+                  <span>Profile</span>
+                </Link>
+              </DropdownMenuItem>
               {address && (
                 <DropdownMenuItem onClick={disconnectWallet} className="text-red-400 focus:text-red-400 focus:bg-red-950/20">
                   <Wallet className="mr-2 h-4 w-4" />
